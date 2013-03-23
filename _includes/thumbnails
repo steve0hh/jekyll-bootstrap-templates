@@ -1,0 +1,16 @@
+{% assign thumbnails = page.thumbnail_gallery %}
+<ul class="thumbnails">
+  {% for node in thumbnails %}
+  <li class="span2">
+    <div class="thumbnail">
+     <img src="{{node.url}}">
+     {% if node.label != null %}
+       <h4>{{node.label}}</h4>
+     {% endif %}
+     {% if node.caption != null %}
+        <p>{{node.caption}}</p>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
