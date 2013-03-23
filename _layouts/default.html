@@ -26,7 +26,6 @@
   <script src="assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-
   <div class="container">
 
   <div class="masthead">
@@ -47,8 +46,10 @@
 
     <!--Body content-->
     {{ content }}
+
+    <footer>
+      <p class="muted credit"> {{site.url}} &copy;<script>var d = new Date();document.write(d.getFullYear());</script> All Rights Reserved.</p>
+    </footer>
   </div> <!-- /container -->
-
-
 </body>
 </html>
