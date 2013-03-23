@@ -1,0 +1,18 @@
+{% assign card = page.contactcards %}
+{% for node in card %}
+<div class="hero-unit">
+  <div class="row-fluid">
+    <div class="span3">
+      <img class="img-rounded" src="{{node.imgurl}}">
+    </div>
+    <div class="span9">
+      <address>
+        <h1>{{node.name}}</h1><br>
+        <p><strong>{{node.appt}}</strong></p>
+        <p>Tel: <a href="tel:{{node.contact}}">{{node.contact}}</a></p>
+        <p>CEA Reg no.: {{node.regno}}</p>
+      </address>
+    </div> <!-- /span9 -->
+  </div> <!-- /row-fluid -->
+</div> <!-- /hero-unit -->
+{% endfor %}
