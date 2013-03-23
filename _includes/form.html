@@ -1,0 +1,53 @@
+<form method="post" name="contact_form" action="email_form.php">
+  <fieldset>
+    <legend>Register your interest below</legend>
+    <label>Saluation:</label>
+
+    <input type="text" name="contacts" id="asip" />
+
+    <label class="radio inline">
+    <input type="radio" name="saluation" value="Mr"/>
+    Mr
+    </label>
+
+    <label class="radio inline">
+    <input type="radio" name="saluation"  value="Ms"/>
+    Ms
+    </label>
+
+    <label class="radio inline">
+    <input type="radio" name="saluation" value="Ms"/>
+    Ms
+    </label>
+
+    <label class="radio inline">
+    <input type="radio" name="saluation" value="Dr"/>
+    Dr
+    </label>
+
+    <label>Your Name(required):</label>
+    <input type="text" name="name" placeholder="Enter name here please"/>
+
+    <label>Mobile Contact(required):</label>
+    <input type="text" name="contact" placeholder="Enter contact here please"/>
+
+    <label>Your Email(required):</label>
+    <input type="text" name="email" placeholder="Enter email here please"/>
+
+    <label>Subject:</label>
+    <select name="subject">
+    <option value="I want more information">I want more information</option>
+    <option value="I want to register for VVIP">I want to register for VVIP</option>
+    <option value="Others">Others</option>
+
+    </select>
+
+    <label>Your Message</label>
+    <textarea rows="5" name="message">
+
+    </textarea>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </fieldset>
+</form>

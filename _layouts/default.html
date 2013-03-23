@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title> {% if page.title %} {{ page.title }} | {% endif %} {{site.name}} </title>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Le Stylesheets
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    #asip{
+      display:none;
+    }
+  </style>
+
+  <!-- Le javascript
+  ================================================== -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+  <div class="masthead">
+    <div class="row-fluid">
+      <div class="span8"><h2>{{site.name}}</h3></div>
+      <div class="span4">
+        <h2>Sales Enquiry: <a href="tel:{{site.contact.number}} ">{{site.contact.number}}</a>
+        </h2>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs">
+      {% assign pages_list = site.weighted_pages %}
+      {% assign group = 'navigation' %}
+      {% include pages_list %}
+    </ul>
+  </div><!-- /masthead -->
+
+
+    <!--Body content-->
+    {{ content }}
+  </div> <!-- /container -->
+
+
+</body>
+</html>
