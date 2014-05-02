@@ -1,13 +1,24 @@
-#Steve's Jekyll marketing site template
+#Jekyll + twitter bootstrap combo
 
+##Bootstrap components for Jekyll
 
-#How to use
+[Twitter bootstrap](http://getbootstrap.com/) is awesome!
 
-##_layouts
+So is [Jekyll](http://jekyllrb.com/)!
+
+Hence I am giving you guys my twitter bootstrap components in Jekyll! :)
+
+##Install
+
+Just move the components to your jekyll project respectively!
+
+##Components & usage
+
+###layouts
 
 There are 2 different kinds of layouts for this project
 
-### default
+#### default
 
 This is the default layout for the whole site.
 
@@ -15,7 +26,7 @@ Preview :
 
 ![default layout preview](http://i.imgur.com/Y1psZLb.png)
 
-### defaultwform
+#### defaultwform
 
 This layout compromises of the default layout with a form attached to the content page.
 
@@ -24,9 +35,9 @@ Preview :
 ![default with form preview](http://i.imgur.com/GwneGnm.png)
 
 
-##_includes
+###includes
 
-###Gallery
+####Gallery
 
 Add the following in your YML Front maker
 
@@ -43,7 +54,7 @@ Result:
 ![gallery example result](http://i.imgur.com/DkgVQP9.png)
 
 
-###Thumbnails
+####Thumbnails
 
 There are 3 parameters you can specifiy:
 
@@ -69,7 +80,7 @@ Result :
 
 ![thumbnails example result](http://i.imgur.com/z50FnF2.png)
 
-###Contact cards
+####Contact cards
 
 There are 4 parameters you can provide:
 
@@ -100,6 +111,7 @@ Then add the following in the place you want the contact cards to be.
 Result :
 
 ![contact cards result](http://i.imgur.com/yJTus8O.png)
+
 
 ##TODOs
 
